@@ -1,0 +1,131 @@
+/* variables CSS */
+
+:root {
+  --body-bg-color: #f4f4f9;
+  --primary-color: #fff;
+  --secondary-color: #00466b;
+  --BtnHover-color: #07527a;
+  --navTogller-color: rgba(0, 0, 0, 0.233);
+  --navTogller-border-color: #0b5d89;
+  --navTogller-border-color-focus: #0f6da0cd;
+  --navTogglerIcon-color: #0f5981;
+  --post-hover-color: rgba(0, 0, 0, 0.2);
+  --sidebar-bg-color: #f8f9fa;
+  --sidebar-shadow-color: rgba(0, 0, 0, 0.1);
+  --footer-bg-color: #343a40;
+  --footer-padding: 20px;
+  --footer-margin-top: 40px;
+  --footer-p-margin: 0;
+}
+
+/* 7. Creativity:
+- Suggest and implement additional improvements for
+user experience or design. 
+
+I edited some colors like the header and buttons background color, and added hover to the buttons.
+enhanced the navbar-toggler button in small screens.
+enhaanced the colors contrast to make it more comfortable to eyes.
+
+*/
+
+
+/* General CSS */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--body-bg-color);
+}
+
+.text-infoo {
+  color: var(--navTogglerIcon-color);
+}
+
+.bg-better {
+  background-color: var(--secondary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.btnHover {
+  transition: all 0.3s !important;
+}
+
+.btnHover:hover {
+  background-color: var(--BtnHover-color) !important;
+  color: var(--primary-color) !important;
+}
+
+#btnTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}
+
+
+/* Header CSS */
+
+.navbar-nav a {
+  color: var(--primary-color);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar-nav a:hover {
+  text-decoration: underline;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: var(--navTogller-color) !important;
+  border: 1px solid var(--navTogller-border-color) !important;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem var(--navTogller-border-color-focus) !important;
+}
+
+/* Main CSS */
+
+
+.post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px var(--post-hover-color);
+}
+.post {
+  border-radius: 8px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Sidebar CSS */
+.sidebar {
+  background-color: var(--sidebar-bg-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--sidebar-shadow-color);
+}
+.sidebar h3 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+.sidebar ul li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+
